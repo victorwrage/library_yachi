@@ -1,0 +1,58 @@
+/** 
+ * @Filename ActivityIntegerateUmeng.java 
+ * @Description TODO 
+ * @Version 1.0
+ * @Author xiaoyl
+ * @Creation 2013-8-13 下午4:18:56   
+ * @Copyright Copyright © 2009 - 2013 Victor.All Rights Reserved.
+**/
+package com.yachi.library_yachi.gui;
+
+import com.umeng.analytics.MobclickAgent;
+
+import android.os.Bundle;
+
+/** 
+ * @ClassName ActivityIntegerateUmeng 
+ * @Description TODO 集成友盟SDK
+ * @Version 1.0
+ * @Creation 2013-8-13 下午4:18:56 
+ * @Mender xiaoyl
+ * @Modification 2013-8-13 下午4:18:56 
+ **/
+public class ActivityIntegerateUmeng extends ActivityBasedSherlock {
+          /** 
+         * @Name onCreate
+         * @Description TODO 
+         * @param savedInstanceState
+         * @see android.app.Activity#onCreate(android.os.Bundle)
+         * @Date 2013-8-13 下午4:19:07
+        **/
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+        	super.onCreate(savedInstanceState);
+        	
+        }
+        
+        /** 
+    	 * <p>Title: onResume</p> 
+    	 * <p>Description: </p>  
+    	 * @see android.support.v4.app.FragmentActivity#onResume() 
+    	 */
+    	@Override
+    	protected void onResume() {
+    		super.onResume();
+    		MobclickAgent.onResume(this);
+    	}
+    	
+    	/** 
+    	 * <p>Title: onPause</p> 
+    	 * <p>Description: </p>  
+    	 * @see com.actionbarsherlock.app.SherlockFragmentActivity#onPause() 
+    	 */
+    	@Override
+    	protected void onPause() {
+    		super.onPause();
+    		MobclickAgent.onPause(this);
+    	}
+}
