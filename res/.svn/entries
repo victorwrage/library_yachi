@@ -1,0 +1,71 @@
+10
+
+dir
+2915
+svn://192.168.0.250/android/library_yachi/res
+svn://192.168.0.250
+
+
+
+2013-08-20T08:43:35.359375Z
+2915
+longge
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+299d23ca-5c1f-094e-8f35-abcf76e5704a
+
+
+
+
+
+
+0
+
+anim
+dir
+
+drawable
+dir
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+layout
+dir
+
+values
+dir
+
+values-ja
+dir
+
+values-v11
+dir
+
+values-v14
+dir
+
+values-zh
+dir
+
